@@ -16,6 +16,9 @@
 		873BF43E185837D70044A4E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 873BF43D185837D70044A4E4 /* Default.png */; };
 		873BF440185837D70044A4E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 873BF43F185837D70044A4E4 /* Default@2x.png */; };
 		873BF442185837D70044A4E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 873BF441185837D70044A4E4 /* Default-568h@2x.png */; };
+		873BF44B1858387D0044A4E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873BF4491858387D0044A4E4 /* ViewController.m */; };
+		873BF44C1858387D0044A4E4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873BF44A1858387D0044A4E4 /* ViewController.xib */; };
+		873BF44F18583B810044A4E4 /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 873BF44E18583B810044A4E4 /* CustomOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		873BF43D185837D70044A4E4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		873BF43F185837D70044A4E4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		873BF441185837D70044A4E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		873BF4481858387D0044A4E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		873BF4491858387D0044A4E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		873BF44A1858387D0044A4E4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		873BF44D18583B810044A4E4 /* CustomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
+		873BF44E18583B810044A4E4 /* CustomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,11 @@
 			children = (
 				873BF43A185837D70044A4E4 /* AppDelegate.h */,
 				873BF43B185837D70044A4E4 /* AppDelegate.m */,
+				873BF4481858387D0044A4E4 /* ViewController.h */,
+				873BF4491858387D0044A4E4 /* ViewController.m */,
+				873BF44A1858387D0044A4E4 /* ViewController.xib */,
+				873BF44D18583B810044A4E4 /* CustomOperation.h */,
+				873BF44E18583B810044A4E4 /* CustomOperation.m */,
 				873BF432185837D70044A4E4 /* Supporting Files */,
 			);
 			path = OperationDemo;
@@ -154,6 +167,7 @@
 				873BF43E185837D70044A4E4 /* Default.png in Resources */,
 				873BF440185837D70044A4E4 /* Default@2x.png in Resources */,
 				873BF442185837D70044A4E4 /* Default-568h@2x.png in Resources */,
+				873BF44C1858387D0044A4E4 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +180,8 @@
 			files = (
 				873BF438185837D70044A4E4 /* main.m in Sources */,
 				873BF43C185837D70044A4E4 /* AppDelegate.m in Sources */,
+				873BF44B1858387D0044A4E4 /* ViewController.m in Sources */,
+				873BF44F18583B810044A4E4 /* CustomOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
