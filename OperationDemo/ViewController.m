@@ -8,6 +8,22 @@
 
 #import "ViewController.h"
 
+
+#if  __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+//if (IOS7_OR_LATER)
+//{
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    self.extendedLayoutIncludesOpaqueBars = NO;
+//    self.modalPresentationCapturesStatusBarAppearance = NO;
+//    [self prefersStatusBarHidden];
+//    [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+//    [self.view setFrame:CGRectMake(MinX(self.view), MinY(self.view), WIDTH(self.view), HEIGHT(self.view)-kStatusBarHeight)];
+//}
+
+#endif	  // #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+
+
+
 @interface ViewController ()
 
 @end
@@ -99,6 +115,16 @@
     
 
 }
+
+//  汉子转拼音
+- (NSString *)getPinYinFrom:(NSString *)chinese
+{
+    CFMutableStringRef string = CFStringCreateMutableCopy(NULL, 0, (CFMutableStringRef)[NSMutableString stringWithString:chinese]);
+    CFStringTransform(string, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform(string, NULL, kCFStringTransformStripDiacritics, NO);
+    return (NSString *)string;
+}
+
 
 - (void) doSomething{
 
